@@ -1,6 +1,5 @@
 package com.fq.fqsensors.temperature.monitoring.api.config.web;
 
-import com.fq.fqsensors.device.management.api.config.web.StringToTSIDWebConverter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
