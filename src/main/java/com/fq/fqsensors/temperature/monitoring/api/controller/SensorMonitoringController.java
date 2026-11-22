@@ -41,9 +41,9 @@ public class SensorMonitoringController {
         repository.saveAndFlush(sensorMonitoring);
     }
 
-    @DeleteMapping("/desable")
+    @DeleteMapping("/enable")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void desable(@PathVariable TSID sensorId){
+    public void disable(@PathVariable TSID sensorId){
         SensorMonitoring sensorMonitoring = getSensorMonitoring(sensorId);
         sensorMonitoring.setEnebled(false);
         repository.saveAndFlush(sensorMonitoring);
